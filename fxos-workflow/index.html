@@ -28,17 +28,77 @@
           <span>Mozilla FXOS</span>
         </div>
       </div>
-      <div>amirnissim.github.io/talks/fxos-workflow</div>
+      <div>
+        <span class="red">amirnissim.github.io</span><span class="green">/talks</span><span class="yellow">/fxos-workflow</span>
+      </div>
     </div>
   </div>
   <div class="page">
-    <div class="title">Firefox OS?</div>
-    <div class="content">content</di flex-colv>
+    <div class="title">Firefox OS</div>
+    <div class="content">
+      <div id="fxos-device"></div>
+    </div>
   </div>
   <div class="page">
-    <div class="title">title</div>
-    <div class="content flex-col">
-      <input type="checkbox">Commit
+    <div class="title">Firefox OS</div>
+    <div class="content">
+      <ul>
+        <li>open source</li>
+        <li>hosted on Github</li>
+        <li>356 contributors</li>
+        <li>11 branches</li>
+        <li>1 master</li>
+        <li>no dev branch</li>
+      </ul>
+    </div>
+  </div>
+  <div class="page">
+    <div class="title">Workflow</div>
+    <div class="content">
+      <ul class="workflow">
+        <li>
+          <label><input type="checkbox">file a new <span class="highlight">bug</span> #90210</label>
+        </li>
+        <li>
+          <label><input type="checkbox">git checkout -b 90210-bugfix master</label>
+        </li>
+        <li>
+          <label><input type="checkbox">hack</label>
+        </li>
+        <li>
+          <label><input type="checkbox">git commit -m 'fixed #90210 [<span class="highlight">r=ranbena</span>]'</label>
+        </li>
+        <li>
+          <label><input type="checkbox">git push origin 90210-bugfix</label>
+        </li>
+        <li>
+          <label><input type="checkbox">new <span class="highlight">Pull Request</span></label>
+        </li>
+        <li>
+          <label><input type="checkbox">code review</label>
+        </li>
+        <li>
+          <label><input type="checkbox">tests <a class="highlight"><span class="bold">travis-ci.org</span>/mozilla-b2g/gaia/</a></label>
+          <ul>
+            <li>linting</li>
+            <li>unit</li>
+            <li>UI</li>
+          </ul>
+        </li>
+        <li>
+          <label><input type="checkbox">merge into <span class="highlight">master</span></label>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="page">
+    <div class="title">It's not over yet ...</div>
+    <div class="content">
+      <ul>
+        <li>tests run again on master</li>
+        <li><span class="highlight">uplift</span> to version branch</li>
+        <li>tree is closed</li>
+      </ul>
     </div>
   </div>
 </body>

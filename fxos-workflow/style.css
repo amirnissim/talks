@@ -10,13 +10,25 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'open sans';
 }
 
 body {
   background: #272822;
   color: white;
+  font-family: 'open sans';
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
 }
+
+a[href]{
+  text-decoration: none;
+}
+
+.red { color: #f92772; }
+.green { color: #a6e22d; }
+.yellow, .highlight { color: #e6db74; }
+.bold { font-weight: bold; }
 
 .flex-row {
   flex-direction: row;
@@ -44,7 +56,6 @@ body {
 
 .content {
   height: 100%;
-  border-bottom: 1px solid gray;
 }
 
 
@@ -74,6 +85,22 @@ body {
 #fxos {background-image: url(img/fxos-logo.png);}
 
 /* fxos */
-#firefox-device {
+#fxos-device {
+  background: url(img/fxos-phone.png) center center no-repeat;
+  height: 100%;
+}
 
+/* workflow */
+.workflow {
+  list-style: none;
+  padding-left: 19px;
+}
+.workflow > li {
+  margin-bottom: 12px;
+  white-space: nowrap;
+}
+.workflow > li input[type="checkbox"] {
+  position: relative;
+  bottom: 2px;
+  margin-right: 10px;
 }
