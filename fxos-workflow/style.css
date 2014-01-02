@@ -18,31 +18,62 @@ body {
   color: white;
 }
 
-.container {
+.flex-row {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.page {
   position: relative;
   height: 100%;
 }
 
-.container .title {
-  font-size: 14px;
-  border-bottom: 1px solid gray;
-  width: 100%;
-  text-align: center;
+.title {
+  text-align: left;
+  font-size: 32px;
 }
-.container .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.content {
   height: 100%;
   border-bottom: 1px solid gray;
 }
 
-#amirnissim {
-  display: inline-block;
+
+/* intro */
+.logo-item {
+  margin-bottom: 20px;
+}
+.logo-item:last-child {
+  margin-bottom: 55px;
+}
+.logo-container {
+  padding-right: 15px
+}
+.logo-container ~ span {
+  flex: 1 0 0;
+  white-space: nowrap;;
+}
+.logo {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: url(img/amirnissim.jpg) left center no-repeat;
   background-size: cover;
+}
+
+#amirnissim {background-image: url(img/amirnissim.jpg);}
+#everythingme {background-image: url(img/eme-logo.png);}
+#fxos {background-image: url(img/fxos-logo.png);}
+
+/* fxos */
+#firefox-device {
+
 }
