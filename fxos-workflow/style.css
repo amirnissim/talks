@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+::selection{
+    background: #ED1556;
+    color: #fff;
+    text-shadow: none;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'open sans';
+}
+
+body {
+  background: #272822;
+  color: white;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.container .title {
+  font-size: 14px;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  text-align: center;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-bottom: 1px solid gray;
+}
+
+#amirnissim {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: url(img/amirnissim.jpg) left center no-repeat;
+  background-size: cover;
+}
