@@ -7,8 +7,8 @@
 </head>
 <body>
   <div class="page">
-    <div class="content flex-col">
-      <div>
+    <div class="content centered">
+      <div class="centered">
         <div class="logo-item flex-row">
           <div class="logo-container">
             <div id="amirnissim" class="logo"></div>
@@ -28,42 +28,44 @@
           <span>Mozilla FXOS</span>
         </div>
       </div>
-      <div>
+      <div class="text-center">
         <span class="red">amirnissim.github.io</span><span class="green">/talks</span><span class="yellow">/fxos-workflow</span>
       </div>
     </div>
   </div>
   <div class="page">
     <div class="title">Firefox OS</div>
-    <div class="content">
+    <div class="content fill">
       <div id="fxos-device"></div>
     </div>
   </div>
   <div class="page">
     <div class="title">Firefox OS</div>
     <div class="content">
-      <ul>
+      <ul class="list">
         <li>open source</li>
+        <li>on bugzilla</li>
         <li>hosted on Github</li>
-        <li>356 contributors</li>
+        <li>~356 contributors</li>
         <li>11 branches</li>
-        <li>1 master</li>
         <li>no dev branch</li>
+        <li>work done on branches of forks</li>
+        <li>then merged to upstream</li>
       </ul>
     </div>
   </div>
   <div class="page">
     <div class="title">Workflow</div>
     <div class="content">
-      <ul class="workflow">
+      <ul class="workflow list">
         <li>
-          <label><input type="checkbox">file a new <span class="highlight">bug</span> #90210</label>
+          <label><input type="checkbox">new <span class="highlight">bug</span> #90210</label>
         </li>
         <li>
           <label><input type="checkbox">git checkout -b 90210-bugfix master</label>
         </li>
         <li>
-          <label><input type="checkbox">hack</label>
+          <label><input type="checkbox">code</label>
         </li>
         <li>
           <label><input type="checkbox">git commit -m 'fixed #90210 [<span class="highlight">r=ranbena</span>]'</label>
@@ -94,7 +96,7 @@
   <div class="page">
     <div class="title">It's not over yet ...</div>
     <div class="content">
-      <ul>
+      <ul class="list">
         <li>tests run again on master</li>
         <li><span class="highlight">uplift</span> to version branch</li>
         <li>tree is closed</li>

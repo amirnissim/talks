@@ -30,34 +30,51 @@ a[href]{
 .yellow, .highlight { color: #e6db74; }
 .bold { font-weight: bold; }
 
+.centered {
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
 .flex-row {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  display: flex;
 }
 
 .page {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+
   position: relative;
   height: 100%;
+  margin-bottom: 50px;
 }
-
 .title {
   text-align: left;
   font-size: 32px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .content {
-  height: 100%;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+    flex: auto;
+    align-content: center;
 }
-
+.content.centered {
+  justify-content: center;
+}
+.content.fill {
+  width: 100%;
+}
 
 /* intro */
 .logo-item {
@@ -67,17 +84,18 @@ a[href]{
   margin-bottom: 55px;
 }
 .logo-container {
-  padding-right: 15px
+  padding-right: 15px;
 }
 .logo-container ~ span {
-  flex: 1 0 0;
-  white-space: nowrap;;
+    flex: 1 0 0;
+    white-space: nowrap;;
 }
 .logo {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   background-size: cover;
+  float: right;;
 }
 
 #amirnissim {background-image: url(img/amirnissim.jpg);}
@@ -86,16 +104,23 @@ a[href]{
 
 /* fxos */
 #fxos-device {
-  background: url(img/fxos-phone.png) center center no-repeat;
-  height: 100%;
+  background: url(img/fxos-phone.png) center top no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-size: cover;
 }
 
 /* workflow */
+.list {
+  margin-top: 0;
+}
 .workflow {
   list-style: none;
-  padding-left: 19px;
+  padding-left: 0;
 }
-.workflow > li {
+.list > li {
   margin-bottom: 12px;
   white-space: nowrap;
 }
