@@ -115,6 +115,7 @@ a[href]{
 /* workflow */
 .list {
   margin-top: 0;
+  padding-left: 21px;
 }
 .workflow {
   list-style: none;
