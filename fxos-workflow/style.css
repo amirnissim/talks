@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
 
 ::selection{
     background: #ED1556;
@@ -17,8 +17,9 @@ body {
   color: white;
   font-family: 'open sans';
   font-size: 18px;
+  font-weight: 300;
   color: rgba(255, 255, 255, 0.9);
-  padding: 10px;
+  padding: 10px 30px;
 }
 
 a[href]{
@@ -27,8 +28,9 @@ a[href]{
 
 .red { color: #f92772; }
 .green { color: #a6e22d; }
-.yellow, .highlight { color: #e6db74; }
 .bold { font-weight: bold; }
+.yellow, .highlight,
+.list > li.active { color: #e6db74; }
 
 .centered {
   margin: 0 auto;
@@ -45,19 +47,21 @@ a[href]{
 
 .page {
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
   display: flex;
 
   position: relative;
   height: 100%;
   margin-bottom: 50px;
+  align-items: center;
 }
 .title {
   text-align: left;
+  font-weight: 400;
   font-size: 32px;
   width: 100%;
   margin-bottom: 20px;
+  color: rgb(140, 220, 247);
 }
 
 .content {
@@ -77,6 +81,10 @@ a[href]{
 }
 
 /* intro */
+#link {
+  font-weight: 400;
+}
+
 .logo-item {
   margin-bottom: 20px;
 }
@@ -117,16 +125,17 @@ a[href]{
   margin-top: 0;
   padding-left: 21px;
 }
-.workflow {
-  list-style: none;
-  padding-left: 0;
-}
-.list > li {
+
+.list li {
   margin-bottom: 12px;
-  white-space: nowrap;
+  cursor: pointer;
 }
-.workflow > li input[type="checkbox"] {
-  position: relative;
-  bottom: 2px;
-  margin-right: 10px;
+
+#workflow li {
+  transition-property: text-decoration, color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in;
+}
+#workflow li:not(.active) {
+  opacity: 0.3;
 }

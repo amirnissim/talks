@@ -29,8 +29,8 @@
           <span>Mozilla FXOS</span>
         </div>
       </div>
-      <div class="text-center">
-        <span class="red">amirnissim.github.io</span><span class="green">/talks</span><span class="yellow">/fxos-workflow</span>
+      <div id="link" class="text-center">
+        <span class="red">http://</span><span class="green">goo.gl/</span><span class="yellow">n3R5ND</span>
       </div>
     </div>
   </div>
@@ -44,13 +44,13 @@
     <div class="title">Firefox OS</div>
     <div class="content">
       <ul class="list">
-        <li>open source</li>
-        <li>on bugzilla</li>
-        <li>hosted on Github</li>
-        <li>~356 contributors</li>
-        <li>11 branches</li>
-        <li>no dev branch</li>
-        <li>work done on branches of forks</li>
+        <li>Open Source</li>
+        <li>Everything is a bug on Bugzilla</li>
+        <li>Code hosted on Github</li>
+        <li>>350 contributors (and counting)</li>
+        <li>No dev branch, develop in master</li>
+        <li>Branch for every release</li>
+        <li>Work done on branches of forks</li>
         <li>then merged to upstream</li>
       </ul>
     </div>
@@ -58,40 +58,22 @@
   <div class="page">
     <div class="title">Workflow</div>
     <div class="content">
-      <ul class="workflow list">
-        <li>
-          <label><input type="checkbox">new <span class="highlight">bug</span> #90210</label>
-        </li>
-        <li>
-          <label><input type="checkbox">git checkout -b 90210-bugfix master</label>
-        </li>
-        <li>
-          <label><input type="checkbox">code</label>
-        </li>
-        <li>
-          <label><input type="checkbox">git commit -m 'fixed #90210 [<span class="highlight">r=ranbena</span>]'</label>
-        </li>
-        <li>
-          <label><input type="checkbox">git push origin 90210-bugfix</label>
-        </li>
-        <li>
-          <label><input type="checkbox">new <span class="highlight">Pull Request</span></label>
-        </li>
-        <li>
-          <label><input type="checkbox">code review</label>
-        </li>
-        <li>
-          <label><input type="checkbox">tests <a class="highlight"><span class="bold">travis-ci.org</span>/mozilla-b2g/gaia/</a></label>
-          <ul>
-            <li>linting</li>
-            <li>unit</li>
-            <li>UI</li>
-          </ul>
-        </li>
-        <li>
-          <label><input type="checkbox">merge into <span class="highlight">master</span></label>
-        </li>
-      </ul>
+      <ol id="workflow" class="list">
+        <li class="active">New bug #90210</li>
+        <li>git checkout -b 90210-bugfix master</li>
+        <li>&lt;code&gt;</li>
+        <li>git commit -m 'fixed #90210 [r=ranbena]'</li>
+        <li>git push origin 90210-bugfix</li>
+        <li>new Pull Request</li>
+        <li>code review</li>
+        <li>tests travis-ci.org/mozilla-b2g/gaia/</li>
+        <ul>
+          <li>linting</li>
+          <li>unit</li>
+          <li>UI</li>
+        </ul>
+        <li>merge into master</li>
+      </ol>
     </div>
   </div>
   <div class="page">
@@ -104,5 +86,6 @@
       </ul>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
