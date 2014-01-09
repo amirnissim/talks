@@ -110,16 +110,6 @@ a[href]{
 #everythingme {background-image: url(img/eme-logo.png);}
 #fxos {background-image: url(img/fxos-logo.png);}
 
-/* fxos */
-#fxos-device {
-  background: url(img/fxos-phone.png) center top no-repeat;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background-size: cover;
-}
-
 /* workflow */
 .list {
   margin-top: 0;
