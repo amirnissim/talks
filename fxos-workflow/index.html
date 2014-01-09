@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
-  <div class="page">
-    <div class="content centered">
+  <div class="page" div="intro">
+    <div class="content">
       <div class="centered">
         <div class="logo-item flex-row">
           <div class="logo-container">
@@ -24,7 +24,7 @@
         </div>
         <div class="logo-item flex-row">
           <div class="logo-container">
-            <div id="fxos" class="logo"></div>
+            <div id="fxos-logo" class="logo"></div>
           </div>
           <span>Mozilla FXOS</span>
         </div>
@@ -35,29 +35,27 @@
     </div>
   </div>
   <div class="page">
-    <div class="title">Firefox OS</div>
     <div class="content">
+      <div class="title">Development</div>
       <ul class="list">
-        <li>Open Source</li>
         <li>Everything is a bug on Bugzilla</li>
         <li>Code hosted on Github</li>
-        <li>>350 contributors (and counting)</li>
-        <li>No dev branch, develop in master</li>
+        <li>Work done on branches (+forks)</li>
+        <li>then merged to master</li>
+        <li>No dev branch</li>
         <li>Branch for every release</li>
-        <li>Work done on branches of forks</li>
-        <li>then merged to upstream</li>
       </ul>
     </div>
   </div>
   <div class="page">
-    <div class="title">Workflow</div>
     <div class="content">
+    <div class="title">Workflow</div>
       <ol id="workflow" class="list">
-        <li class="active">New bug #90210</li>
-        <li>git checkout -b 90210-bugfix master</li>
+        <li class="active">New bug #957976</li>
+        <li>git checkout -b 957976-bugfix master</li>
         <li>&lt;code&gt;</li>
-        <li>git commit -m 'fixed #90210 [r=ranbena]'</li>
-        <li>git push origin 90210-bugfix</li>
+        <li>git commit -m 'fixed #957976 [r=ranbena]'</li>
+        <li>git push origin 957976-bugfix</li>
         <li>new Pull Request</li>
         <li>code review</li>
         <li>tests travis-ci.org/mozilla-b2g/gaia/</li>
@@ -67,17 +65,17 @@
           <li>UI</li>
         </ul>
         <li>merge into master</li>
+        <li>close the bug</li>
+        <!-- <li>tests run again on master</li> -->
+        <!-- <li>optional: uplift to version branch</li> -->
       </ol>
     </div>
   </div>
   <div class="page">
-    <div class="title">It's not over yet ...</div>
     <div class="content">
-      <ul class="list">
-        <li>tests run again on master</li>
-        <li><span class="highlight">uplift</span> to version branch</li>
-        <li>tree is closed</li>
-      </ul>
+      <div class="centered">
+        <div class="title">Thank You</div>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>

@@ -55,6 +55,7 @@ a[href]{
   margin-bottom: 50px;
   align-items: center;
 }
+
 .title {
   text-align: left;
   font-weight: 400;
@@ -68,16 +69,10 @@ a[href]{
     flex-direction: column;
     display: flex;
     position: relative;
-    padding-bottom: 20px;
     width: 100%;
     flex: auto;
     align-content: center;
-}
-.content.centered {
-  justify-content: center;
-}
-.content.fill {
-  width: 100%;
+    justify-content: center;
 }
 
 /* intro */
@@ -108,7 +103,8 @@ a[href]{
 
 #amirnissim {background-image: url(img/amirnissim.jpg);}
 #everythingme {background-image: url(img/eme-logo.png);}
-#fxos {background-image: url(img/fxos-logo.png);}
+#fxos-logo {background-image: url(img/fxos-logo.png);}
+
 
 /* workflow */
 .list {
@@ -118,12 +114,12 @@ a[href]{
 
 .list li {
   margin-bottom: 12px;
-  cursor: pointer;
 }
 
 #workflow li {
+  cursor: pointer;
   transition-property: text-decoration, color;
-  transition-duration: 0.4s;
+  /*transition-duration: 0.4s;*/
   transition-timing-function: ease-in;
 }
 #workflow li:not(.active) {
