@@ -38,12 +38,13 @@
     <div class="content">
       <div class="title">Development</div>
       <ul class="list">
-        <li>Everything is a bug on Bugzilla</li>
-        <li>Code hosted on Github</li>
+        <li>Git and Github for source control</li>
+        <li>Bugzilla for issue tracking</li>
+        <li>1 bug === 1 commit</li>
         <li>Work done on branches (+forks)</li>
-        <li>then merged to master</li>
+        <li>Merged to master</li>
         <li>No dev branch</li>
-        <li>Branch for every release</li>
+        <li>New release branches out of master</li>
       </ul>
     </div>
   </div>
@@ -51,19 +52,27 @@
     <div class="content">
     <div class="title">Workflow</div>
       <ol id="workflow" class="list">
-        <li class="active">New bug #957976</li>
-        <li>git checkout -b 957976-bugfix master</li>
+        <li class="active">New bug #958923</li>
+        <li>new branch from master</li>
         <li>&lt;code&gt;</li>
-        <li>git commit -m 'fixed #957976 [r=ranbena]'</li>
-        <li>git push origin 957976-bugfix</li>
+        <li>commit
+          <ul>
+            <li>bug number</li>
+            <li>short infomative description</li>
+            <li>reviewer's name</li>
+          </ul>
+        </li>
+        <li>git push origin 958923-bugfix</li>
         <li>new Pull Request</li>
         <li>code review</li>
-        <li>tests travis-ci.org/mozilla-b2g/gaia/</li>
-        <ul>
-          <li>linting</li>
-          <li>unit</li>
-          <li>UI</li>
-        </ul>
+        <li>tests travis-ci.org/mozilla-b2g/gaia/
+          <ul>
+            <li>linting</li>
+            <li>unit</li>
+            <li>UI</li>
+          </ul>
+        </li>
+
         <li>merge into master</li>
         <li>close the bug</li>
         <!-- <li>tests run again on master</li> -->

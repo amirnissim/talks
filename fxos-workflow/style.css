@@ -29,8 +29,7 @@ a[href]{
 .red { color: #f92772; }
 .green { color: #a6e22d; }
 .bold { font-weight: bold; }
-.yellow, .highlight,
-.list > li.active { color: #e6db74; }
+.yellow, .highlight { color: #e6db74; }
 
 .centered {
   margin: 0 auto;
@@ -122,6 +121,12 @@ a[href]{
   /*transition-duration: 0.4s;*/
   transition-timing-function: ease-in;
 }
-#workflow li:not(.active) {
+#workflow > li {
   opacity: 0.3;
+}
+
+#workflow li.active,
+#workflow li.active li {
+  opacity: 1;
+  color: #e6db74;
 }
